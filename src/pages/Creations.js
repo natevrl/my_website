@@ -1,9 +1,10 @@
 import React from 'react';
+import Navbar from '../components/Navbar';
 
 const Creations = () => {
 	return (
 		<div>
-			My own projects
+			<Navbar />
 		</div>
 	);
 };

@@ -53,15 +53,10 @@ const Navbar = () => {
 			</div>
 
 			<div className='social'>
-				<ul>
-					<li>
-						<a href="https://github.com/N4t4nis">
-							<i className='fas fa-github'>
-								<span>Github</span>
-							</i>
-						</a>
-					</li>
-				</ul>
+
+					<a href="https://github.com/N4t4nis"><i className='fas fa-github'></i></a>
+					<a href="https://www.linkedin.com/"><i className='fas fa-linkedin'></i></a>
+					<a href="https://tryhackme.com/"><i className="fas fa-robot"></i></a>
 			</div>
 
 		</div>

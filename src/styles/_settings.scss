@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+
+$font-1: 'Ubuntu', sans-serif;
+
+// color palette of the website
+$colortext-1: #e6e6e6;
+$colortext-2: #9c9c9c;
+$color-1: #000000;
+$color-2: #150050;
+$color-3: #3F0071;
+$color-4: #610094;
+
+$borderRadius: 25px;
+$shadow: 0 1px 3px #333;
+$min-height: 95vh;
+
+@mixin vertical_center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 1rem auto;
+	max-width: 1200px;
+	font-family: $font-1;
+	color: $color-1;
+}
+
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: $color-1;
+	cursor: pointer;
+}
+
+a:visited {
+	color: $color-1;
+}
+
+.home, .creations, .about, .contact {
+	display: flex;
+}
+
+// @media screen and (max-width : 850px){
+// 	display: block !important;
+// }
+
+.home_content, .creations_content, .about_content, .contact_content {
+	margin-left: .4rem;
+
+	@media screen and (max-width : 850px){
+		margin-left: 0 !important;
+	}
+}
