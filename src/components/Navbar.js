@@ -5,7 +5,7 @@ const Navbar = () => {
 	return (
 		<div className='sidebar'>
 			<div className='id'>
-				<div className='id-content'>
+				<div className='idContent'>
 					<img src="./media/photo-intra.jpg" alt="profil-pic" />
 					<h3>nbenhado</h3>
 				</div>
@@ -22,7 +22,7 @@ const Navbar = () => {
 							</i>
 						</NavLink>
 					</li>
-
+	
 					<li>
 						<NavLink exact to="/about" activeClassName="navAtive">
 							{/* importe licone de fontawesome */}
@@ -52,8 +52,7 @@ const Navbar = () => {
 				</ul>
 			</div>
 
-			<div className='social'>
-
+			<div className='socialNetwork'>
 					<a href="https://github.com/N4t4nis"><i className='fas fa-github'></i></a>
 					<a href="https://www.linkedin.com/"><i className='fas fa-linkedin'></i></a>
 					<a href="https://tryhackme.com/"><i className="fas fa-robot"></i></a>
