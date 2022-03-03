@@ -1,22 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Card extends Component {
-  render() {
+//mode function
+function Card(props) {
 	return (
-	<div className="card-contenair" key={this.props.tab.id}>
-		<div className='card-title'>{this.props.tab.title}</div>
+	<div className="card-contenair" key={props.tab.id}>
+		<div className='card-title'>{props.tab.title}</div>
 		<div className='card-description'>Recreate the fonctionement of bash shell by executing command, handling signals, redir... </div>
-		<a href={this.props.tab.link} rel="noopener noreferrer" target="_blank"><i className='fas fa-github'></i></a>
+		<a href={props.tab.link} rel="noopener noreferrer" target="_blank"><i className='fas fa-github'></i></a>
 	</div>
 	);
-  };
 }
 
+export default Card;
 
-// itere sur chaque element du tableau que le parent a donne
-// return this.props.tab.map((tab) =>
-// <div className="card-contenair" key={tab.id}>
-// 	<div className='card-title'>{tab.title}</div>
-// 	<div className='card-description'>Recreate the fonctionement of bash shell by executing command, handling signals, redir... </div>
-// 	<a href={tab.link} rel="noopener noreferrer" target="_blank"><i className='fas fa-github'></i></a>
-// </div>
+
+// mode class
+// export default class Card extends Component {
+//   render() {
+// 	return (
+	// <div className="card-contenair" key={this.props.tab.id}>
+	// 	<div className='card-title'>{this.props.tab.title}</div>
+	// 	<div className='card-description'>Recreate the fonctionement of bash shell by executing command, handling signals, redir... </div>
+	// 	<a href={this.props.tab.link} rel="noopener noreferrer" target="_blank"><i className='fas fa-github'></i></a>
+	// </div>
+// 	);
+//   };
+// }
