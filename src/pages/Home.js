@@ -1,17 +1,27 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Typist from 'react-typist';
+
 
 const Home = () => {
 	return (
 		<div className='home'>
-			<div className='home-title'>/Home</div>
+			<div className='home-title'>
+				<Typist avgTypingDelay={110}>
+					<span className="type-title">
+						{"Hello, "}
+						<span className="type-name">{"Nathan"}</span>
+						{" here."}
+					</span>
+				</Typist>
+			</div>
+
 			<div className='home-main'>
 				<div className='home-text'>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					<div className='under-title'>Completed 30+ projects in less than 1 year</div>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley of type and orem Ipsum passages, and more recently with desktop publishing software.
 				</div>
 				<img src="./media/photo-intra.jpg" alt="profil-picture" />
 			</div>
-			{/* <Navbar /> */}
 		</div>
 	);
 };

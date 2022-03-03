@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
 
 $font-family1: 'Ubuntu', sans-serif;
+$font-family2: 'Source Sans Pro', sans-serif;
 
-$color-1: #2a1d52;
-$color-2: #6C77F4;
-$color-3: rgb(99, 164, 233);
-$color-4: #4FEDD2;
-$color-5: #36D0EA;
+$color-1: #055e14;
+$color-2: #7c2e41;
+$color-3: #ab2836;
 $white: #ddd;
-$black: rgb(8, 8, 8);
-$grey: rgb(78, 78, 78);
+$black: rgba(0, 0, 0, 0.952);
+$grey: rgb(121, 121, 121);
 
 $borderRadius: 25px;
 $shadow: 0 1px 3px #333;
@@ -17,13 +17,18 @@ $minHeight: 95vh;
 
 
 body {
-	background: rgba(0, 0, 0, 0.952);
+	background: $black;
+	font-family: $font-family2;
+	color: #efefef;
+	font-size: 24px;
+	line-height: 38px;
+	font-weight: 400;
 }
 
 #content {
 	display: flex;
     justify-content: center;
-	flex-direction: column;
+	// flex-direction: column;
 	// margin: 200px 200px 0px 200px;
 	padding-left: 15%;
 	padding-top: 15%;
@@ -37,9 +42,7 @@ body {
   }
 }
 
-.home {
-	background: rgb(109, 109, 253);
-}
+
 .about {
 	background: rgb(231, 241, 170);
 }
@@ -74,5 +77,5 @@ a {
   cursor: pointer;
 }
 a:visited {
-  color:$color-4;
+  color:$color-3;
 }

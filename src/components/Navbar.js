@@ -5,44 +5,31 @@ const Navbar = () => {
 	return (
 		<div className='sidebar'>
 			<div className='navigation'>
-				<NavLink exact to="/" activeClassName="navcAtive">
+				<NavLink exact to="/" activeClassName="active">
 					{/* importe licone de fontawesome */}
-					<i className='fas fa-home'>
-						<span> /home</span>
-					</i>
+					{/* <i className='fas fa-home'> */}
+						<span>/home </span>
+					{/* </i> */}
 				</NavLink>
 
-
-
-				<NavLink
-					to="/about"
-					activeStyle={{
-						fontWeight: "bold",
-						color: "red"
-					}}
-					>
-					FAQs
-					</NavLink>
-
-
-				{/* <NavLink exact to="/about" activeClassName="navActive">
-					<i className='fas fa-mountain'>
-						<span> /about me</span>
-					</i>
-				</NavLink> */}
-
-				<NavLink exact to="/creations" activeClassName="navActive">
-					{/* importe licone de fontawesome */}
-					<i className='fas fa-images'>
-						<span> /creations</span>
-					</i>
+				<NavLink exact to="/about" activeClassName="navActive">
+					{/* <i className='fas fa-mountain'> */}
+						<span>/about_me </span>
+					{/* </i> */}
 				</NavLink>
 
-				<NavLink exact to="/contact" activeClassName="navActive">
+				<NavLink exact to="/creations" activeClassName="active">
 					{/* importe licone de fontawesome */}
-					<i className='fas fa-address-book'>
-						<span> /contact</span>
-					</i>
+					{/* <i className='fas fa-images'> */}
+						<span>/creations </span>
+					{/* </i> */}
+				</NavLink>
+
+				<NavLink exact to="/contact" activeClassName="active">
+					{/* importe licone de fontawesome */}
+					{/* <i className='fas fa-address-book'> */}
+						<span>/contact </span>
+					{/* </i> */}
 				</NavLink>
 			</div>
 
