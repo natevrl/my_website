@@ -1,19 +1,44 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
+import React, { Component } from 'react';
+import { NULL } from 'sass';
+import Card from '../components/Card';
 
-const Creations = () => {
+
+export default class Creations extends Component {
+  
+	state =  {
+		tab_cards: [
+			{
+				id: "1",
+				title: "test1111",
+				link: "https://github.com/N4t4nis"
+			},
+			{
+				id: "2",
+				title: "test2222",
+				link: "https://github.com/N4t4nis"
+			}
+		]
+	}
+	
+	// Iter = () => {
+	// 	var i = 0;
+	// 	while (i < 2)
+	// 	{
+	// 		<Card tab={this.state.tab_cards[i]}/>
+	// 		console.log(this.state.tab_cards[i].title);
+	// 		i++;
+	// 	}
+	// 	return (null)
+	// }
+	render() {
 	return (
-		<div className='creations'>
-						<div className='home-title'>/Home</div>
-			<div className='home-main'>
-				<div className='home-text'>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-				</div>
-				<img src="./media/photo-intra.jpg" alt="profil-picture" />
+			<div className='creations'>
+				{/* <Card tab={this.state.tab_cards[0]}/> */}
+				{/* <this.Iter/> */}
 			</div>
-
-		</div>
 	);
-};
+  }
+}
 
-export default Creations;
+
+		// <div className='home-title'>/creations</div>
