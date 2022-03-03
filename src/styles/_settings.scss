@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
-$font-1: 'Nova Round', cursive;
-$font-2: 'Dosis', sans-serif;
-$font-3: 'Josefin Sans', serif;
+$font-family1: 'Ubuntu', sans-serif;
 
 $color-1: #2a1d52;
 $color-2: #6C77F4;
@@ -10,28 +8,60 @@ $color-3: rgb(99, 164, 233);
 $color-4: #4FEDD2;
 $color-5: #36D0EA;
 $white: #ddd;
-$black: #333;
+$black: rgb(8, 8, 8);
+$grey: rgb(78, 78, 78);
 
 $borderRadius: 25px;
 $shadow: 0 1px 3px #333;
 $minHeight: 95vh;
+
+
+body {
+	background: rgba(0, 0, 0, 0.952);
+}
+
+#content {
+	display: flex;
+    justify-content: center;
+	flex-direction: column;
+	// margin: 200px 200px 0px 200px;
+	padding-left: 15%;
+	padding-top: 15%;
+	padding-right: 25%;
+}
+
+.home, .about, .creations, .contact {
+
+  @media screen and (max-width: 850px){
+    display: block !important;
+  }
+}
+
+.home {
+	background: rgb(109, 109, 253);
+}
+.about {
+	background: rgb(231, 241, 170);
+}
+.creations{
+	background: rgb(170, 241, 208);
+}
+.contact{
+	background: rgb(241, 170, 170);
+}
 
 @mixin verticalCenter {
   display: flex;
   justify-content: center;
   align-items: center; 
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body {
-  margin: 1rem auto;
-  max-width: 1200px;
-  font-family: $font-1;
-  color: $black;
-}
+
 button {
   cursor: pointer;
 }
@@ -40,23 +70,9 @@ li {
 }
 a {
   text-decoration: none;
-  color: $black;
+  color: $color-2;
   cursor: pointer;
 }
 a:visited {
-  color:$black;
-}
-.home, .knowledges, .portfolio, .contact {
-  display: flex;
-
-  @media screen and (max-width: 850px){
-    display: block !important;
-  }
-}
-.homeContent, .knowledgesContent, .portfolioContent, .contactContent {
-  margin-left: .4rem;
-
-  @media screen and (max-width: 850px){
-    margin-left: 0 !important;
-  }
+  color:$color-4;
 }
