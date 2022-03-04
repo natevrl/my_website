@@ -21,6 +21,8 @@
 .filter-bar {
 	display: flex;
 	align-items: baseline;
+	flex-wrap: wrap;
+	justify-content: center;
 
 	p {
 		margin-right:10px;
@@ -29,7 +31,6 @@
 	span {
 		font-family: $font-family1;
 		font-size: 18px;
-		margin-right: 10px;
 
 		&:hover {
 			transform: translate(3px, 3px);
@@ -40,6 +41,9 @@
 		text-decoration: none;
 		color: $color-1;
 		cursor: pointer;
+		border-bottom: 1px solid;
+		margin: 5px;
+		// padding: 5px;
 	  }
 	.active {
 		color: $grey;

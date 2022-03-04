@@ -1,17 +1,4 @@
-.deck-contenair {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	overflow: auto;
-	width: 100%;
-	max-width: 1300px;
-	max-height: 600px;
-	// background: crimson;
-	margin: 20px auto;
-	@media screen and (max-width: 850px){
-			overflow: unset;
-	  }
-}
+
 
 .main-creations {
 	margin: 70px;
@@ -19,4 +6,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+	.deck-contenair {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		overflow: auto;
+		width: 100%;
+		max-width: 1300px;
+		max-height: 600px;
+		// background: crimson;
+		margin: 20px auto;
+		@media screen and (max-width: 850px){
+			overflow: unset;
+		}
+
+	}
+	@media screen and (max-width: 850px){
+		margin: 20px;
+  }
 }
