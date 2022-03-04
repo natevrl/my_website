@@ -1,12 +1,17 @@
 
-.App {
-	// background: navy;
-	display: flex;
-	flex-direction: row;
-}
+// .App {
+// 	// background: navy;
+// 	display: flex;
+// 	flex-direction: row;
+// }
 
 
 .home {
+	width: 80%;
+    max-width: 1300px;
+    margin: 100px auto;
+    flex-direction: column;
+
 	img {
 		max-width: 300px;
 		height: auto;
@@ -26,7 +31,7 @@
 
 .home-text {
 	padding-right: 40px;
-	max-width: 740px;
+	// max-width: 740px;
 }
 
 .home-title {

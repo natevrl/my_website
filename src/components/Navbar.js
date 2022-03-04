@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
-		<div className='sidebar'>
+		<div className='navbar'>
 			<div className='navigation'>
 				<NavLink exact to="/" activeClassName="active">
 					{/* importe licone de fontawesome */}

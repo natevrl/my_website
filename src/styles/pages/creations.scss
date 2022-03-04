@@ -1,8 +1,22 @@
 .deck-contenair {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow: auto;
+	width: 100%;
+	max-width: 1300px;
+	max-height: 600px;
+	// background: crimson;
+	margin: 20px auto;
+	@media screen and (max-width: 850px){
+			overflow: unset;
+	  }
 }
 
-.deck-colums {
-	display: flex;
+.main-creations {
+	margin: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

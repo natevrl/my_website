@@ -2,7 +2,8 @@
 	display: flex;
 	flex-direction: column;
     justify-content: space-evenly;
-	width: 250px;
+	flex-shrink: 0;
+	width: 280px;
 	height: 280px;
 	border-radius: 10%;
 	border: 1px $color-1;
@@ -16,11 +17,12 @@
 		justify-content: center;
 		font-size: 36px;
 		color: $color-1;
-
-		// i {
-		// 	background: chocolate;
-		// }
 	}
+	@media screen and (max-width: 350px){
+		width: 220px;
+		height: 220px;
+
+	  }
 }
 
 	
