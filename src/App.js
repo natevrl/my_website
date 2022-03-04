@@ -1,5 +1,5 @@
 import React from 'react';
-import Switch from 'react-switch';
+
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import All from './pages/creations/All';
@@ -13,16 +13,7 @@ import Linux from './pages/creations/Linux';
 import Reactjs from './pages/creations/Reactjs';
 import Cpp from './pages/creations/Cpp';
 
-// var Container = React.createClass({
-// 	render: function () {
-// 		return <div>
-// 			<Home />
-// 			<Contact />
-// 			<Creations />
-// 			<About />
-// 		</div>;
-// 	}
-// });
+
 
 const App = () => {
 
