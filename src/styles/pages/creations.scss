@@ -1,35 +1,8 @@
-.creations {
+.deck-contenair {
 	display: flex;
-	align-items: center;
-	width: 1200px;
-	height: 600px;
+	flex-direction: column;
 }
 
-li {
-
+.deck-colums {
 	display: flex;
-	align-items: center;
-
-}
-// .slide .selected {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-// .carousel *{
-//     display: flex;
-//     box-sizing: border-box;
-//     flex-direction: row;
-//     align-content: center;
-//     align-items: center;
-// }
-.carousel-root {
-	display: flex;
-}
-
-.carousel .slider-wrapper.axis-horizontal .slider .slide {
-	display: flex;
-    flex-direction: row;
 }
