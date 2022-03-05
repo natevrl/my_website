@@ -10,8 +10,10 @@ $color-3: #ab2836;
 $color-4: #838105;
 
 $white: #ddd;
+$darkwhite: rgb(207, 207, 207);
 $black: rgba(0, 0, 0, 0.952);
 $grey: rgb(121, 121, 121);
+$darkgrey: rgb(85, 85, 85);
 
 $borderRadius: 25px;
 $shadow: 0 1px 3px #333;
@@ -50,17 +52,6 @@ body {
   @media screen and (max-width: 850px){
     display: block !important;
   }
-}
-
-
-.about {
-	background: rgb(231, 241, 170);
-}
-.creations{
-	background: rgb(0, 105, 56);
-}
-.contact{
-	background: rgb(241, 170, 170);
 }
 
 @mixin verticalCenter {

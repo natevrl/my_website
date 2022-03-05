@@ -23,7 +23,7 @@ const Home = () => {
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley of type and orem Ipsum passages, and more recently with desktop publishing software.
 					</div>
 
-					<NavLink exact to="/creations/" activeClassName="active"><span className='home-button'>Check out my work <FaArrowRight className='icon' /></span></NavLink>
+					<NavLink exact to="/creations/" activeclassname="active"><span className='home-button'>Check out my work <FaArrowRight className='icon' /></span></NavLink>
 				</div>
 				<img src="./media/photo-intra.jpg" alt="profil-picture" />
 			</div>

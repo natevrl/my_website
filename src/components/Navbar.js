@@ -5,27 +5,29 @@ const Navbar = () => {
 	return (
 		<div className='navbar'>
 			<div className='navigation'>
-				<NavLink exact to="/" activeClassName="active">
+				<NavLink exact to="/" activeclassname="active">
 					{/* importe licone de fontawesome */}
 					{/* <i className='fas fa-home'> */}
 						<span>/home </span>
 					{/* </i> */}
 				</NavLink>
 
-				<NavLink exact to="/about" activeClassName="navActive">
-					{/* <i className='fas fa-mountain'> */}
-						<span>/about_me </span>
-					{/* </i> */}
-				</NavLink>
+		
 
-				<NavLink exact to="/creations" activeClassName="active">
+				<NavLink exact to="/creations" activeclassname="active">
 					{/* importe licone de fontawesome */}
 					{/* <i className='fas fa-images'> */}
 						<span>/creations </span>
 					{/* </i> */}
 				</NavLink>
 
-				<NavLink exact to="/contact" activeClassName="active">
+				<NavLink exact to="/about" activeclassname="navActive">
+					{/* <i className='fas fa-mountain'> */}
+						<span>/about_me </span>
+					{/* </i> */}
+				</NavLink>
+
+				<NavLink exact to="/contact" activeclassname="active">
 					{/* importe licone de fontawesome */}
 					{/* <i className='fas fa-address-book'> */}
 						<span>/contact </span>

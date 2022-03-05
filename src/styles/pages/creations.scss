@@ -1,5 +1,3 @@
-
-
 .main-creations {
 	margin: 70px;
     display: flex;
@@ -18,11 +16,14 @@
 		// background: crimson;
 		margin: 20px auto;
 		@media screen and (max-width: 850px){
-			overflow: unset;
+			// overflow: unset;
+		max-height: 800px;
+
 		}
 
 	}
 	@media screen and (max-width: 850px){
 		margin: 20px;
+
   }
 }

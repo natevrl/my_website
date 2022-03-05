@@ -32,8 +32,13 @@ const App = () => {
 					<Route path="/contact" element={<Contact/>} />
 					<Route path="*" element={<Not_found/>} />
 				</Routes>
-			{/* </div> */}
 				<Navbar />
+				<div className="credits">
+				<div class="ending-credits">
+				<div>Built and designed by nbenhado. </div>
+				<div>All rights reserved. ©</div>
+				</div>
+				</div>
 		</div>
 	);
 };

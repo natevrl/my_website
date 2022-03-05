@@ -1,15 +1,27 @@
+.credits {
+	// display: flex;
+	// align-items: center;
+	position: fixed;
+	bottom: -5px;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
-// .App {
-// 	// background: navy;
-// 	display: flex;
-// 	flex-direction: row;
-// }
+	
+	.ending-credits {
+		text-align: center;
+		width: 100%;
+		font-size: 16px;
+		color: $darkgrey;
+	}
+}
+
 
 .home {
 	display: flex;
 	width: 80%;
     max-width: 1300px;
     margin: 100px auto;
+	justify-content: center;
 
 	img {
 		max-width: 300px;
