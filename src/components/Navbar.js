@@ -21,7 +21,7 @@ const Navbar = () => {
 					{/* </i> */}
 				</NavLink>
 
-				<NavLink exact to="/about" activeclassname="navActive">
+				<NavLink exact to="/about_me" activeclassname="navActive">
 					{/* <i className='fas fa-mountain'> */}
 						<span>/about_me </span>
 					{/* </i> */}

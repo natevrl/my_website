@@ -47,7 +47,7 @@ body {
 // //     padding-right: 25%;
 }
 
-.home, .about, .creations, .contact {
+.home, .About_me, .creations, .contact {
 
   @media screen and (max-width: 850px){
     display: block !important;
@@ -77,6 +77,11 @@ a {
 a:hover {
   margin: 5px;
   color: $grey;
+}
+
+p {
+	padding-right: 40px;
+	max-width: 740px;
 }
 
 // a:visited {

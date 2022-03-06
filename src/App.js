@@ -3,7 +3,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import All from './pages/creations/All';
-import About from './pages/About';
+import About_me from './pages/About_me';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Not_found from './pages/Not_found';
@@ -28,7 +28,7 @@ const App = () => {
 					<Route path="/creations/reactjs" element={<Reactjs/>}/> 
 					<Route path="/creations/ctf" element={<Ctf/>}/> 
 					<Route path="/creations/linux" element={<Linux/>}/> 
-					<Route path="/about" element={<About/>} />
+					<Route path="/about_me" element={<About_me/>} />
 					<Route path="/contact" element={<Contact/>} />
 					<Route path="*" element={<Not_found/>} />
 				</Routes>
@@ -45,7 +45,7 @@ const App = () => {
 
 {/* <Routes>
 	<Route path="/" exact element={<Home/>} />
-	<Route path="/about" element={<About/>} />
+	<Route path="/About_me" element={<About_me/>} />
 	<Route path="/creations" element={<Creations/>} />
 	<Route path="/contact" element={<Contact/>} />
 	<Route path="/error" element={<Not_found/>} />

@@ -7,7 +7,7 @@ import Header from '../components/Header';
  
 const Home = () => {
 	return (
-		<div className="main-contenairr">
+		<div className="main-contenair">
 			<Header title={"> /home"} />
 			<div className='home'>
 				<div className='home-main'>
@@ -19,9 +19,9 @@ const Home = () => {
 						</span>
 					</Typist>
 					<div className='under-title'>Completed 30+ projects in less than 1 year</div>
-					<div className='home-text'>
+					<p>
 						Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley of type and orem Ipsum passages, and more recently with desktop publishing software.
-					</div>
+					</p>
 
 					<NavLink exact to="/creations/" activeclassname="active"><span className='home-button'>Check out my work <FaArrowRight className='icon' /></span></NavLink>
 				</div>
