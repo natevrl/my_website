@@ -1,6 +1,6 @@
 import React from 'react';
-import Card from '../components/Card';
-import data from '../data/data.json'
+import Card from './Card';
+import data from '../db.json'
 
 
 const find_tag = (tabs, tag) => {
