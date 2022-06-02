@@ -1,9 +1,10 @@
 .main-creations {
-	margin: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	// margin: 60px;
+	// margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
 	.deck-contenair {
 		display: flex;
@@ -11,19 +12,18 @@
 		justify-content: center;
 		overflow: auto;
 		width: 100%;
-		max-width: 1300px;
+		max-width: 1200px;
 		max-height: 600px;
-		// background: crimson;
 		margin: 20px auto;
-		@media screen and (max-width: 850px){
-			// overflow: unset;
-		max-height: 800px;
 
+		@media screen and (max-width: 850px) {
+			max-height: 800px;
 		}
 
 	}
-	@media screen and (max-width: 850px){
+
+	@media screen and (max-width: 850px) {
 		margin: 20px;
 
-  }
+	}
 }

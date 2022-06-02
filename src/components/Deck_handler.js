@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import data from '../db.json'
+import dataFromDb from '../db.json'
 
 
 const find_tag = (tabs, tag) => {
@@ -14,9 +14,9 @@ const find_tag = (tabs, tag) => {
 const Deck_handler = (props) => {
 		var i = -1;
 		var rows = [];
-		while (data[++i])
-			if (find_tag(data[i].tag, props.tag))
-				rows.push(<Card tab={data[i]}/>);
+		while (dataFromDb[++i])
+			if (find_tag(dataFromDb[i].tag, props.tag))
+				rows.push(<Card tab={dataFromDb[i]}/>);
 		return (<div className="deck-contenair">{rows}</div> );
 	}
 

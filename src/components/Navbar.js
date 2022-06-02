@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
 	return (
 		<div className='navbar'>
-			<div className='navigation'>
 				<NavLink exact to="/" activeclassname="active">
 					{/* importe licone de fontawesome */}
 					{/* <i className='fas fa-home'> */}
@@ -33,8 +32,6 @@ const Navbar = () => {
 						<span>/contact </span>
 					{/* </i> */}
 				</NavLink>
-			</div>
-
 			{/* <div className='socialNetwork'>
 					<a href="https://github.com/N4t4nis"><i className='fas fa-github'></i></a>
 					<a href="https://www.linkedin.com/"><i className='fas fa-linkedin'></i></a>

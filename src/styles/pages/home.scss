@@ -16,6 +16,7 @@
 }
 
 
+
 .home {
 	display: flex;
 	width: 80%;
@@ -30,8 +31,13 @@
 		border: 2px solid $color-1;
 		@media screen and (max-width: 850px){
 				display: none;
-	
-		  }
+		}
+
+
+	}
+	p {
+		padding-right: 40px;
+		max-width: 740px;
 	}
 }
 
