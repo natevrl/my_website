@@ -7,9 +7,10 @@ import Header from '../components/Header';
  
 const Home = () => {
 	return (
-		<div className="main-contenair">
+		<>
 			<Header title={"> /home"} />
 			<div className='home'>
+				<img src="./media/photo-intra.jpg" alt="profil-picture" />
 				<div className='home-main'>
 					<Typist avgTypingDelay={110}>
 						<span className="type-title">
@@ -25,9 +26,8 @@ const Home = () => {
 
 					<NavLink exact to="/creations/" activeclassname="active"><span className='home-button'>Check out my work <FaArrowRight className='icon' /></span></NavLink>
 				</div>
-				<img src="./media/photo-intra.jpg" alt="profil-picture" />
 			</div>
-		</div>
+		</>
 	);
 };
 

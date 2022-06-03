@@ -1,45 +1,54 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-	return (
-		<div className='navbar'>
-				<NavLink exact to="/" activeclassname="active">
-					{/* importe licone de fontawesome */}
-					{/* <i className='fas fa-home'> */}
-						<span>/home </span>
-					{/* </i> */}
-				</NavLink>
 
-		
+	const [windowSize, setWindowSize] = useState(window.innerWidth);
 
-				<NavLink exact to="/creations" activeclassname="active">
-					{/* importe licone de fontawesome */}
-					{/* <i className='fas fa-images'> */}
-						<span>/creations </span>
-					{/* </i> */}
-				</NavLink>
+	useEffect(() => {
 
-				<NavLink exact to="/about_me" activeclassname="navActive">
-					{/* <i className='fas fa-mountain'> */}
-						<span>/about_me </span>
-					{/* </i> */}
-				</NavLink>
+		const changeWindowSize = () => {
+			setWindowSize(window.innerWidth);
+		}
+		window.addEventListener('resize', changeWindowSize);
+		return (() => {window.removeEventListener('resize', changeWindowSize)});
+	}, []);
 
-				<NavLink exact to="/contact" activeclassname="active">
-					{/* importe licone de fontawesome */}
-					{/* <i className='fas fa-address-book'> */}
-						<span>/contact </span>
-					{/* </i> */}
-				</NavLink>
-			{/* <div className='socialNetwork'>
-					<a href="https://github.com/N4t4nis"><i className='fas fa-github'></i></a>
-					<a href="https://www.linkedin.com/"><i className='fas fa-linkedin'></i></a>
-					<a href="https://tryhackme.com/"><i className="fas fa-robot"></i></a>
-			</div> */}
-
-		</div>
-	);
+  return (
+    <>
+      {windowSize < 580 ? (
+        <nav className="mobile-navbar">
+          <NavLink exact to="/" activeclassname="active">
+            <i className="fas fa-home"></i>
+          </NavLink>
+          <NavLink exact to="/creations" activeclassname="active">
+            <i className="fas fa-images"></i>
+          </NavLink>
+          <NavLink exact to="/about_me" activeclassname="navActive">
+            <i className="fas fa-mountain"></i>
+          </NavLink>
+          <NavLink exact to="/contact" activeclassname="active">
+            <i className="fas fa-address-book"></i>
+          </NavLink>
+        </nav>
+      ) : (
+        <nav className="navbar">
+          <NavLink exact to="/" activeclassname="active">
+            <span>/home </span>
+          </NavLink>
+          <NavLink exact to="/creations" activeclassname="active">
+            <span>/creations </span>
+          </NavLink>
+          <NavLink exact to="/about_me" activeclassname="navActive">
+            <span>/about_me </span>
+          </NavLink>
+          <NavLink exact to="/contact" activeclassname="active">
+            <span>/contact </span>
+          </NavLink>
+        </nav>
+      )}
+    </>
+  );
 };
 
 export default Navbar;

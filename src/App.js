@@ -5,13 +5,13 @@ import Home from "./pages/Home";
 import All from "./pages/creations/All";
 import About_me from "./pages/About_me";
 import Contact from "./pages/Contact";
-import Navbar from "./components/Navbar";
 import Not_found from "./pages/Not_found";
 import C from "./pages/creations/C";
 import Ctf from "./pages/creations/Ctf";
 import Linux from "./pages/creations/Linux";
 import Reactjs from "./pages/creations/Reactjs";
 import Cpp from "./pages/creations/Cpp";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -28,12 +28,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Not_found />} />
       </Routes>
-      <div className="credits">
-        <div class="ending-credits">
-          <div>Built and designed by nbenhado. </div>
-          <div>All rights reserved. ©</div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };
