@@ -47,7 +47,7 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-export default function CustomizedMenus() {
+export default function PhoneFilter() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -60,7 +60,6 @@ export default function CustomizedMenus() {
   return (
     <div className="phone-menu">
       <Button
-	  	// style={{background: 'rgb(75, 0, 0)'}}
         id="demo-customized-button"
         aria-controls={open ? 'demo-customized-menu' : undefined}
         aria-haspopup="true"
@@ -82,29 +81,29 @@ export default function CustomizedMenus() {
         onClose={handleClose}
       >
 		<MenuItem onClick={handleClose} disableRipple>
-			<NavLink exact to="/creations/" className="filter-btn" activeclassname="active"><span>All</span></NavLink>	
+			<NavLink exact to="/projects/" className="filter-btn" activeclassname="active"><span>All</span></NavLink>	
         </MenuItem>
 
         <MenuItem  className="menu-items" onClick={handleClose} disableRipple>
-          <NavLink exact to="/creations/c" className="filter-btn" activeclassname="active"><span>C</span></NavLink>
+          <NavLink exact to="/projects/c" className="filter-btn" activeclassname="active"><span>C</span></NavLink>
         </MenuItem>
 
         <MenuItem onClick={handleClose} disableRipple>
-			<NavLink exact to="/creations/cpp" className="filter-btn" activeclassname="active"><span>C++</span></NavLink>
+			<NavLink exact to="/projects/cpp" className="filter-btn" activeclassname="active"><span>C++</span></NavLink>
         </MenuItem>
 
 
 
 		<MenuItem onClick={handleClose} disableRipple>
-			<NavLink exact to="/creations/reactjs" className="filter-btn" activeclassname="active"><span>React.js</span></NavLink>
+			<NavLink exact to="/projects/reactjs" className="filter-btn" activeclassname="active"><span>React.js</span></NavLink>
 		</MenuItem>
 
 		<MenuItem onClick={handleClose} disableRipple>
-			<NavLink exact to="/creations/ctf" className="filter-btn" activeclassname="active"><span>CTF</span></NavLink>
+			<NavLink exact to="/projects/ctf" className="filter-btn" activeclassname="active"><span>CTF</span></NavLink>
 		</MenuItem>
 
 		<MenuItem onClick={handleClose} disableRipple>
-		<NavLink exact to="/creations/linux" className="filter-btn" activeclassname="active"><span>Linux</span></NavLink>
+		<NavLink exact to="/projects/linux" className="filter-btn" activeclassname="active"><span>Linux</span></NavLink>
 		</MenuItem>
 
 

@@ -18,31 +18,31 @@ const Navbar = () => {
     <>
       {windowSize < 580 ? (
         <nav className="mobile-navbar">
-          <NavLink exact to="/" activeclassname="active">
+          <NavLink to="/" activeclassname="active">
             <i className="fas fa-home"></i>
           </NavLink>
-          <NavLink exact to="/creations" activeclassname="active">
+          <NavLink to="/projects" activeclassname="active">
             <i className="fas fa-images"></i>
           </NavLink>
-          <NavLink exact to="/about_me" activeclassname="navActive">
+          <NavLink to="/about_me" activeclassname="navActive">
             <i className="fas fa-mountain"></i>
           </NavLink>
-          <NavLink exact to="/contact" activeclassname="active">
+          <NavLink to="/contact" activeclassname="active">
             <i className="fas fa-address-book"></i>
           </NavLink>
         </nav>
       ) : (
         <nav className="navbar">
-          <NavLink exact to="/" activeclassname="active">
+          <NavLink to="/" activeclassname="active">
             <span>/home </span>
           </NavLink>
-          <NavLink exact to="/creations" activeclassname="active">
-            <span>/creations </span>
+          <NavLink to="/projects" activeclassname="active">
+            <span>/projects </span>
           </NavLink>
-          <NavLink exact to="/about_me" activeclassname="navActive">
+          <NavLink to="/about_me" activeclassname="navActive">
             <span>/about_me </span>
           </NavLink>
-          <NavLink exact to="/contact" activeclassname="active">
+          <NavLink to="/contact" activeclassname="active">
             <span>/contact </span>
           </NavLink>
         </nav>

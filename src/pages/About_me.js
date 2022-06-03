@@ -15,7 +15,7 @@ export default class About_me extends Component
 	];
 	const tech_items = skills_array.map(function(skill){return <li>{skill}</li>});
 	return (
-		<div className="main-contenair">
+		<>
 			<Header title={"> " + window.location.pathname} />
 			<div className='about-content'>
 					<div className='about-text'>
@@ -29,7 +29,7 @@ export default class About_me extends Component
 
 					</div>
 			</div>
-		</div>
+		</>
 	);
   }
 }

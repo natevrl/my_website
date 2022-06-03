@@ -1,7 +1,6 @@
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-//mode function
 function Card(props) {
 	return (
 	<div className="card-contenair" key={props.tab.id}>

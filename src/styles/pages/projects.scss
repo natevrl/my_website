@@ -1,6 +1,4 @@
-.main-creations {
-	// margin: 60px;
-	// margin-top: 20px;
+.main-projects {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -13,12 +11,8 @@
 		overflow: auto;
 		width: 100%;
 		max-width: 1200px;
-		max-height: 600px;
+		max-height: 800px;
 		margin: 20px auto;
-
-		// @media screen and (max-width: 850px) {
-		// 	max-height: 800px;
-		// }
 
 	}
 

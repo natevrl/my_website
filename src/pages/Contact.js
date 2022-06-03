@@ -3,7 +3,7 @@ import Header from '../components/Header';
 
 const Contact = () => {
 	return (
-		<div className="main-contenairr">
+		<>
 			<Header title={"> " + window.location.pathname} />
 			<div className='contact'>
 				<div className='home-main'>
@@ -12,7 +12,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
