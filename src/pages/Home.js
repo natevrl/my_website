@@ -42,7 +42,7 @@ const Home = () => {
             Ipsum passages, and more recently with desktop publishing software.
           </p>
 
-          <NavLink exact to="/projects/" activeclassname="active">
+          <NavLink to="/projects/" activeclassname="active">
             <span className="home-button">
               Check out my work <FaArrowRight className="icon" />
             </span>
