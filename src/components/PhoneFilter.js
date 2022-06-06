@@ -99,7 +99,7 @@ export default function PhoneFilter() {
 		</MenuItem>
 
 		<MenuItem onClick={handleClose} disableRipple>
-			<NavLink exact to="/projects/ctf" className="filter-btn" activeclassname="active"><span>CTF</span></NavLink>
+			<NavLink exact to="/projects/html_css" className="filter-btn" activeclassname="active"><span>html_css</span></NavLink>
 		</MenuItem>
 
 		<MenuItem onClick={handleClose} disableRipple>

@@ -1,13 +1,38 @@
-import React from 'react';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import React from "react";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
-function Card(props) {
+function Card({item}) {
+
+	function setColor(li) {
+		// test = []
+		if (li === "C") return {color: "#8338ec"};
+		if (li === "Linux") return {color: "#ff006e"};
+		if (li === "Cpp") return {color: "#3a86ff"};
+		if (li === "html_css") return {color: "#fb5607"};
+		if (li === "Reactjs") return {color: "#ffbe0b"};
+
+	}
+
 	return (
-	<div className="card-contenair" key={props.tab.id}>
-		<div className='card-title'>{props.tab.title}</div>
-		<div className='card-description'>Recreate the fonctionement of bash shell by executing command, handling signals, redir... </div>
-		<a href={props.tab.link} rel="noopener noreferrer" target="_blank"><GitHubIcon/></a>
-	</div>
+		<div className="card-contenair" key={item.id}>
+			<h4 className="card-title">{item.title}</h4>
+			<p className="card-description">
+				Recreate the fonctionement of bash shell by executing command, handling
+				signals, redir...{" "}
+			</p>
+			<a href={item.link} rel="noopener noreferrer" target="_blank">
+				<GitHubIcon />
+			</a>
+			<ul className="card-tags">
+				{item.tags.map((li, i) => 
+					<li className="tags-item" 
+						key={i} 
+						style={setColor(li)}>
+						{li}
+						{item.tags[i+1] && ','}
+					</li>)}
+			</ul>
+		</div>
 	);
 }
 

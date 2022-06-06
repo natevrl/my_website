@@ -1,32 +1,39 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import {Projects, C, Cpp, Reactjs, Linux, Ctf} from "./pages/Projects";
-import About_me from "./pages/About_me";
+import { Projects, C, Cpp, Reactjs, Linux, html_css } from "./pages/Projects";
+import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Not_found from "./pages/Not_found";
 import Footer from "./components/Footer";
-import Deck_handler from "./components/Deck_handler";
+import DeckHandler from "./components/DeckHandler";
 
 const App = () => {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects/" element={<Projects />}>
-          <Route path="/projects/c" element={<Deck_handler tag="C"/>} />
-          <Route path="/projects/cpp" element={<Deck_handler tag="Cpp"/>} />
-          <Route path="/projects/reactjs" element={<Deck_handler tag="Reactjs"/>} />
-          <Route path="/projects/ctf" element={<Deck_handler tag="Ctf"/>} />
-          <Route path="/projects/linux" element={<Deck_handler tag="Linux"/>} />
-        </Route>
-        <Route path="/about_me" element={<About_me />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Not_found />} />
-      </Routes>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/projects/" element={<Projects />}>
+					<Route path="/projects/all" element={<DeckHandler tag="All" />} />
+					<Route path="/projects/c" element={<DeckHandler tag="C" />} />
+					<Route path="/projects/cpp" element={<DeckHandler tag="Cpp" />} />
+					<Route
+						path="/projects/reactjs"
+						element={<DeckHandler tag="Reactjs" />}
+					/>
+					<Route path="/projects/html_css" element={<DeckHandler tag="html_css" />} />
+					<Route
+						path="/projects/linux"
+						element={<DeckHandler tag="Linux" />}
+					/>
+				</Route>
+				<Route path="/about_me" element={<AboutMe />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="*" element={<Not_found />} />
+			</Routes>
+			<Footer />
+		</div>
+	);
 };
 
 export default App;

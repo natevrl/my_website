@@ -1,12 +1,13 @@
 import React, { useRef, useEffect } from "react";
 import Typist from "react-typist";
-import { NavLink } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import Header from "../components/Header";
 import "react-typist/dist/Typist.css";
 import { gsap } from "gsap";
 
 const Home = () => {
+  
   const boxRef = useRef();
   const select = gsap.utils.selector(boxRef);
   const timeline = useRef();
@@ -42,11 +43,11 @@ const Home = () => {
             Ipsum passages, and more recently with desktop publishing software.
           </p>
 
-          <NavLink to="/projects/" activeclassname="active">
+          <Link to="/projects/all" >
             <span className="home-button">
               Check out my work <FaArrowRight className="icon" />
             </span>
-          </NavLink>
+          </Link>
         </div>
       </div>
     </>

@@ -1,108 +1,112 @@
-[{
-	"id": "1",
-	"title": "1",
+import { v4 as uuidv4 } from 'uuid';
+
+const dataFromDb = [{
+	"id": uuidv4(),
+	"title": "Minishell",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All", "Linux"]
+	"tags": ["C", "All", "Linux"]
 },
 {
-	"id": "2",
-	"title": "2",
+	"id": uuidv4(),
+	"title": "Cub3d",
 	"link": "https://github.com/nbenhado",
-	"tag": ["Cpp", "All", "Linux"]
+	"tags": ["Cpp", "All", "Linux"]
 },
 {
-	"id": "3",
-	"title": "3",
+	"id": uuidv4(),
+	"title": "AxialMovies",
 	"link": "https://github.com/nbenhado",
-	"tag": ["Cpp", "All"]
+	"tags": ["Reactjs", "All"]
 },
 {
-	"id": "4",
-	"title": "4",
+	"id": uuidv4(),
+	"title": "nBenhado Website",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All", "Linux"]
+	"tags": ["Reactjs", "All"]
 },
 {
-	"id": "5",
-	"title": "5",
+	"id": uuidv4(),
+	"title": "Minitalk",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All"]
+	"tags": ["C", "Linux", "All"]
 },
 {
-	"id": "6",
+	"id": uuidv4(),
 	"title": "6",
 	"link": "https://github.com/nbenhado",
-	"tag": ["Linux", "All"]
+	"tags": ["Linux", "All"]
 },
 {
-	"id": "7",
+	"id": uuidv4(),
 	"title": "7",
 	"link": "https://github.com/nbenhado",
-	"tag": ["Linux", "All"]
+	"tags": ["Linux", "All"]
 },
 {
-	"id": "8",
+	"id": uuidv4(),
 	"title": "8",
 	"link": "https://github.com/nbenhado",
-	"tag": ["Reactjs", "All"]
+	"tags": ["Reactjs", "All"]
 },
 {
-	"id": "9",
+	"id": uuidv4(),
 	"title": "9",
 	"link": "https://github.com/nbenhado",
-	"tag": ["Ctf", "All"]
+	"tags": ["html_css", "All"]
 },
 {
-	"id": "10",
+	"id": uuidv4(),
 	"title": "10",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All"]
+	"tags": ["C", "All"]
 },
 {
-	"id": "11",
+	"id": uuidv4(),
 	"title": "11",
 	"link": "https://github.com/nbenhado",
-	"tag": ["Reactjs", "All"]
+	"tags": ["Reactjs", "All"]
 },
 {
-	"id": "12",
+	"id": uuidv4(),
 	"title": "12",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All"]
+	"tags": ["C", "All"]
 },
 {
-	"id": "13",
+	"id": uuidv4(),
 	"title": "13",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All"]
+	"tags": ["C", "All"]
 },
 {
-	"id": "14",
+	"id": uuidv4(),
 	"title": "14",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All"]
+	"tags": ["C", "All"]
 },
 {
-	"id": "15",
+	"id": uuidv4(),
 	"title": "15",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All"]
+	"tags": ["C", "All"]
 },
 {
-	"id": "16",
+	"id": uuidv4(),
 	"title": "16",
 	"link": "https://github.com/nbenhado",
-	"tag": ["Linux", "All"]
+	"tags": ["Linux", "All"]
 },
 {
-	"id": "17",
+	"id": uuidv4(),
 	"title": "17",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All"]
+	"tags": ["C", "All"]
 },
 {
-	"id": "18",
+	"id": uuidv4(),
 	"title": "18",
 	"link": "https://github.com/nbenhado",
-	"tag": ["C", "All"]
-}]
+	"tags": ["C", "All"]
+}];
+
+export default dataFromDb;

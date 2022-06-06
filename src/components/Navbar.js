@@ -21,7 +21,7 @@ const Navbar = () => {
           <NavLink to="/" activeclassname="active">
             <i className="fas fa-home"></i>
           </NavLink>
-          <NavLink to="/projects" activeclassname="active">
+          <NavLink to="/projects/all" activeclassname="active">
             <i className="fas fa-images"></i>
           </NavLink>
           <NavLink to="/about_me" activeclassname="navActive">
@@ -36,7 +36,7 @@ const Navbar = () => {
           <NavLink to="/" activeclassname="active">
             <span>/home </span>
           </NavLink>
-          <NavLink to="/projects" activeclassname="active">
+          <NavLink to="/projects/all" activeclassname="active">
             <span>/projects </span>
           </NavLink>
           <NavLink to="/about_me" activeclassname="navActive">
