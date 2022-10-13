@@ -4,13 +4,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 function Card({item}) {
 
 	function setColor(li) {
-		// test = []
 		if (li === "C") return {color: "#8338ec"};
 		if (li === "Linux") return {color: "#ff006e"};
 		if (li === "Cpp") return {color: "#3a86ff"};
 		if (li === "html_css") return {color: "#fb5607"};
 		if (li === "Reactjs") return {color: "#ffbe0b"};
-
 	}
 
 	return (
@@ -28,8 +26,8 @@ function Card({item}) {
 					<li className="tags-item" 
 						key={i} 
 						style={setColor(li)}>
-						{li}
-						{item.tags[i+1] && ','}
+						{li !== "All" && li}
+						{item.tags[i+1] && item.tags[i-1] && ','}
 					</li>)}
 			</ul>
 		</div>
