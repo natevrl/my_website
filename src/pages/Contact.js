@@ -35,9 +35,9 @@ const Contact = () => {
           method="POST"
           target="_blank"
         >
-            <input type="text" placeholder="Name" name="name" required />
-            <input type="email" placeholder="Email" name="email" required />
-            <textarea placeholder="Message" name="message" required />
+            <input type="text" placeholder=" Name" name="name" required />
+            <input type="email" placeholder=" Email" name="email" required />
+            <textarea placeholder=" Message" name="message" required />
             <button type="submit">Send a message</button>
         </form>
 			</div>

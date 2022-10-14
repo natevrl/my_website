@@ -16,15 +16,10 @@ const App = () => {
 				<Route path="/projects/" element={<Projects />}>
 					<Route path="/projects/all" element={<DeckHandler tag="All" />} />
 					<Route path="/projects/c" element={<DeckHandler tag="C" />} />
-					<Route path="/projects/cpp" element={<DeckHandler tag="Cpp" />} />
+					<Route path="/projects/unix-bash" element={<DeckHandler tag="Unix/Bash" />} />
 					<Route
-						path="/projects/reactjs"
-						element={<DeckHandler tag="Reactjs" />}
-					/>
-					<Route path="/projects/html_css" element={<DeckHandler tag="html_css" />} />
-					<Route
-						path="/projects/linux"
-						element={<DeckHandler tag="Linux" />}
+						path="/projects/web-mobile"
+						element={<DeckHandler tag="Web/Mobile" />}
 					/>
 				</Route>
 				<Route path="/about_me" element={<AboutMe />} />
