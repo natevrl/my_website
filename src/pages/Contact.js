@@ -35,18 +35,10 @@ const Contact = () => {
           method="POST"
           target="_blank"
         >
-          <div>
-            <input type="text" placeholder="Your name" name="name" required />
-          </div>
-          <div>
+            <input type="text" placeholder="Name" name="name" required />
             <input type="email" placeholder="Email" name="email" required />
-          </div>
-          <div>
-            <textarea placeholder="Your message" name="message" required />
-          </div>
-          <div>
-            <button type="submit"> Send a message </button>
-          </div>
+            <textarea placeholder="Message" name="message" required />
+            <button type="submit">Send a message</button>
         </form>
 			</div>
 		</>
