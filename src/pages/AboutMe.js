@@ -35,7 +35,7 @@ export default class AboutMe extends Component {
 			// CTA projets ou contact
 			<>
 				<Header title={"> " + window.location.pathname} />
-				<div className="about-content">
+				<div className="about-contenair">
 					<div className="about-text">
 						<p>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -43,12 +43,11 @@ export default class AboutMe extends Component {
 							doloribus ullam voluptatum facere cupiditate qui harum aliquam
 							repudiandae quaerat voluptatem accusantium esse dignissimos?
 						</p>
-						<p>Technologies i'm used to use for ma projects :</p>
 					</div>
-					<ul className="skills">{techItems}
-						
-					</ul>
-					<div className="about-skills"></div>
+					<div className="skills-contenair">
+						<h1 className="skills-title">SKILLS</h1>
+						<ul className="skills">{techItems}</ul>
+					</div>
 				</div>
 			</>
 		);

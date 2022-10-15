@@ -1,56 +1,91 @@
-.about-content {
-  margin: 70px;
+.about-contenair {
+  width: 80%;
+  //   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 100vh;
-  margin: 20px auto;
-  background: crimson;
+  margin: auto;
 
-  .skills {
-    width: 35%;
-    // height: 35%;
+  .skills-contenair {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: aqua;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    .one-skill {
+    .about-text {
+      margin: 0 50px;
+      text-align: justify;
+    }
+
+    .skills {
+      max-width: 500px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
       position: relative;
 
-      li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 80px;
-        margin: 5px;
-        cursor: pointer;
-        border-radius: 100px;
-        border: solid 1px $grey;
-      }
+      .one-skill {
+        position: relative;
 
-      .skill-img {
-        //   font-size: 16px;
-        width: 60px;
-      }
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80px;
+          height: 80px;
+          margin: 5px;
+          cursor: pointer;
+          border-radius: 100px;
+          border: solid 1px $grey;
+        }
 
-      .hover-skill-number {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 0;
+        .skill-img {
+          width: 60px;
+        }
+
+        .hover-skill-number {
+          opacity: 0;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          width: 80px;
+          height: 80px;
+          cursor: pointer;
+          border-radius: 100px;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          p {
+            font-weight: bold;
+            color: $black;
+          }
+        }
+        @media screen and (max-width: 450px) {
+          .hover-skill-number {
+            width: 60px;
+            height: 60px;
+          }
+          li {
+            width: 60px;
+            height: 60px;
+          }
+
+          .skill-img {
+            width: 50px;
+          }
+        }
       }
     }
-  }
-
-  @media screen and (max-width: 850px) {
-    margin: 20px;
+    .skills-title {
+      margin: 40px 0;
+    }
   }
 }
