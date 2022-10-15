@@ -37,15 +37,20 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-}
-
-.home,
-.AboutMe,
-.projects {
   @media screen and (max-width: 850px) {
-    display: block !important;
+    height: unset;
+    padding: 40px 20px;
   }
 }
+
+// @media screen and (max-width: 850px) {
+//   .home,
+//   .contact,
+//   .about-contenair,
+//   .projects {
+//     height: unset;
+//   }
+// }
 
 @mixin verticalCenter {
   display: flex;

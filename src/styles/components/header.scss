@@ -1,6 +1,7 @@
 .header-contenair {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   margin: 10px 15px;
 }
 
@@ -25,7 +26,6 @@
 }
 
 .mobile-navbar {
-  // margin-right: 10px;
   .fas {
     margin-right: 10px;
   }
@@ -43,5 +43,25 @@
 @media screen and (max-width: 650px) {
   .header_title {
     font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header-contenair {
+    margin: unset;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header_title {
+    font-size: 18px;
+  }
+
+  .mobile-navbar {
+    .fas {
+      font-size: 20px;
+      margin-right: 5px;
+    }
   }
 }

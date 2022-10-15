@@ -26,12 +26,6 @@
       width: 80%;
       height: 50px;
     }
-    // input[name="message"] {
-    //   height: 10px;
-    //   font-size: 40px;
-    //   background-color: #ab2836;
-    //   color: red;
-    // }
 
     textarea {
       width: 80%;
@@ -59,5 +53,8 @@
     //   background-color: $black;
     //   border: solid 2px $color-2;
     // }
+  }
+  @media screen and (max-width: 850px) {
+    height: unset;
   }
 }
