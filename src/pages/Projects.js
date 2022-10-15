@@ -4,6 +4,7 @@ import Filterbar from "../components/Filterbar";
 import Header from "../components/Header";
 import PhoneFilter from "../components/PhoneFilter";
 import gsap from "gsap";
+import DeckHandler from "../components/DeckHandler";
 
 export const Projects = () => {
 
@@ -20,14 +21,14 @@ export const Projects = () => {
 		.from(select(".card-title"), 1, { opacity: 0 }, "-=0.5");
 	}, []);
   return (
-    <>
-      <Header title={"> " + name} />
-      <div className="main-projects" ref={boxRef}>
-        <PhoneFilter />
-        <Filterbar />
-        <Outlet context={[name, setName]}/>
+      <div id="projects" ref={boxRef}>
+        {/* <PhoneFilter /> */}
+        {/* <Filterbar /> */}
+		<div className="deck-contenair">
+			<DeckHandler tag="All"/>
+		</div>
+        {/* <Outlet context={[name, setName]}/> */}
       </div>
-    </>
   );
 };
 

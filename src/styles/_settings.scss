@@ -36,12 +36,12 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  // height: 100vh;
 }
 
-.home,
-.AboutMe,
-.projects {
+#home,
+#about,
+#projects {
   @media screen and (max-width: 850px) {
     display: block !important;
   }

@@ -22,9 +22,8 @@ const Home = () => {
   }, []);
 
   return (
-    <>
-      <Header title={"> /home"} />
-      <div className="home" ref={boxRef}>
+    <div id="home" ref={boxRef}>
+        {/* <Header title={"> /home"} /> */}
         <img src="./media/photo-intra.jpg" alt="profil-picture" />
         <div className="home-main">
           <Typist avgTypingDelay={110}>
@@ -50,7 +49,6 @@ const Home = () => {
           </Link>
         </div>
       </div>
-    </>
   );
 };
 

@@ -37,9 +37,8 @@ const Contact = () => {
   }
 
 	return (
-		<>
-			<Header title={"> " + window.location.pathname} />
-			<div className='contact' ref={boxRef}>
+			<div id='contact' ref={boxRef}>
+			{/* <Header title={"> " + window.location.pathname} /> */}
         <form
           className='contact-form'
           action={FORM_ENDPOINT}
@@ -53,7 +52,6 @@ const Contact = () => {
             <button type="submit">Send a message</button>
         </form>
 			</div>
-		</>
 	);
 };
 

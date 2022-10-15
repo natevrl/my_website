@@ -1,15 +1,15 @@
-.about-content {
-	margin: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	max-width: 1300px;
-	max-height: 600px;
-	margin: 20px auto;
-	background: crimson;
+#about {
+  margin: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  max-height: 600px;
+  margin: 20px auto;
+  background: crimson;
 
-	@media screen and (max-width: 850px){
-		margin: 20px;
+  @media screen and (max-width: 850px) {
+    margin: 20px;
   }
 }
