@@ -1,23 +1,21 @@
 .main-projects {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-	.deck-contenair {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		overflow: auto;
-		width: 100%;
-		max-width: 1200px;
-		max-height: 800px;
-		margin: 20px auto;
+  .deck-contenair {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+    width: 100%;
+    max-width: 1200px;
+    max-height: 740px;
+    margin: 20px auto;
+  }
 
-	}
-
-	@media screen and (max-width: 850px) {
-		margin: 20px;
-
-	}
+  @media screen and (max-width: 850px) {
+    margin: 20px;
+  }
 }

@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Typist from "react-typist";
 import { Link, useNavigate } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
 import Header from "../components/Header";
 import "react-typist/dist/Typist.css";
 import { gsap } from "gsap";
@@ -45,7 +44,7 @@ const Home = () => {
 
           <Link to="/projects/all" >
             <span className="home-button">
-              Check out my work <FaArrowRight className="icon" />
+              Check out my work
             </span>
           </Link>
         </div>
