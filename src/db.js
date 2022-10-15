@@ -120,7 +120,7 @@ const dataFromDb = [{
 },
 {
 	"id": uuidv4(),
-	"title": "S1gn4l",
+	"title": "Eagl",
 	"description": "Recreate the fonctionement of bash shell by executing command, handling signals, redir...",
 	"link": "https://github.com/nbenhado",
 	"tags": ["All", "Web/Mobile"]

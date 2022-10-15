@@ -4,14 +4,14 @@
 $font-family1: "Ubuntu", sans-serif;
 $font-family2: "Source Sans Pro", sans-serif;
 
-$color-1: #055e14;
-$color-2: #7c2e41;
-$color-3: #ab2836;
-$color-4: #838105;
+$color-1: #541212;
+$color-2: #8b9a46;
+$color-3: #eeeeee;
+$color-4: #c5c31a;
 
 $white: #ddd;
 $darkwhite: rgb(207, 207, 207);
-$black: rgba(0, 0, 0, 0.952);
+$black: #0f0e0e;
 $grey: rgb(121, 121, 121);
 $darkgrey: rgb(85, 85, 85);
 
@@ -63,6 +63,6 @@ li {
 
 a {
   text-decoration: none;
-  color: $color-3;
+  color: $color-1;
   cursor: pointer;
 }
