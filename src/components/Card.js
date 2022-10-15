@@ -1,6 +1,5 @@
 import React, {useRef, useEffect} from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import gsap from "gsap";
 
 
 function Card({item}) {

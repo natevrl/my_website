@@ -3,11 +3,36 @@ import React, { Component } from "react";
 
 export default class AboutMe extends Component {
 	render() {
-		const skills_array = ["C", "C++", "Bash/linux", "React.js", "HTML & CSS"];
-		const tech_items = skills_array.map(function (skill, index) {
-			return <li key={index}>{skill}</li>;
-		});
+		const BASE_PATH = "/media/"
+		const skillsArr = [
+			{name: "javascript", url: "js.png"}, 
+			{name: "bash", url: "bash.png"},
+			{name: "css", url: "css.png"},
+			{name: "html", url: "html.png"},
+			{name: "c", url: "c.png"},
+			{name: "react", url: "react.png"},
+			{name: "reactnative", url: "reactnative.png"},
+			{name: "git", url: "git.png"},
+			{name: "firebase", url: "firebase.png"},
+			{name: "redux", url: "redux.png"},
+			{name: "sass", url: "sass.png"},
+			{name: "unix", url: "unix.png"},
+			{name: "vscode", url: "vscode.png"},
+		];
+		
+		const techItems = skillsArr.map(function (skill, index) {
+			console.log(skill);
+			return <div className="one-skill">			
+					<li  key={index}>
+						<img className="skill-img" src={BASE_PATH + skill.url} alt={skill.name}/>
+					</li>
+						<div className="hover-skill-number"><p>100%</p></div>
+				</div>;
+			});
 		return (
+			// description sur moi, copywriting
+			// skills
+			// CTA projets ou contact
 			<>
 				<Header title={"> " + window.location.pathname} />
 				<div className="about-content">
@@ -20,7 +45,9 @@ export default class AboutMe extends Component {
 						</p>
 						<p>Technologies i'm used to use for ma projects :</p>
 					</div>
-					<ul>{tech_items}</ul>
+					<ul className="skills">{techItems}
+						
+					</ul>
 					<div className="about-skills"></div>
 				</div>
 			</>
