@@ -38,10 +38,13 @@ export default class AboutMe extends Component {
 				<div className="about-contenair">
 					<div className="about-text">
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Dignissimos incidunt soluta excepturi? Tempora, hic laboriosam vel
-							doloribus ullam voluptatum facere cupiditate qui harum aliquam
-							repudiandae quaerat voluptatem accusantium esse dignissimos?
+							- jai fais 1 an de C donc techniquement je suis trop
+							- j'ai appris en autonomie total sans profs, je sais me debrouiller sur internet,
+							- j'ai toujours soif d'apprendre et aucun probleme ne me fait peur
+							- je sais travailler en equipe
+							- jai ete dans la meilleure ecole IT de france
+							- Vous êtes la génération Z : le numérique, vous êtes nés dedans, et pour vous, c'est naturel !
+		
 						</p>
 					</div>
 					<div className="skills-contenair">
