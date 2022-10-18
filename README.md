@@ -1,4 +1,7 @@
-The first version of my personal website portolio
+
+# natevrl.tech
+## First release of my own responsive website, made with React.js and Sass
+---
 
 ![natevrl-portefolio-home_page](https://user-images.githubusercontent.com/80359249/196536084-1d625b84-dc18-41a3-a510-ce65010c267a.png)
 
