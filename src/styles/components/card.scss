@@ -10,6 +10,7 @@
   background: rgb(24, 24, 24);
   box-shadow: 5px 5px 0px 0px rgb(32, 32, 32);
   padding: 15px 25px;
+  // overflow: hidden;
 
   &:hover {
     background-color: $black;
@@ -87,6 +88,17 @@
 
   @media screen and (max-width: 350px) {
     width: 220px;
-    height: 220px;
+    height: 300px;
+    .card-header {
+      flex-direction: column-reverse;
+
+      .card-tags .tags-item {
+        margin-right: unset;
+      }
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+    }
   }
 }
