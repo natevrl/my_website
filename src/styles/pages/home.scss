@@ -7,8 +7,8 @@
   margin: 0 40px;
 
   img {
-    max-width: 300px;
-    border-radius: 10px;
+    max-width: 400px;
+    // border-radius: 10px;
     margin-left: 30px;
   }
 
@@ -47,33 +47,25 @@
     display: flex;
     flex-direction: column;
 
-    // a {
-    //   margin-top: 75px;
-    //   font-family: $font-family1;
-    //   font-weight: 900;
-    //   display: flex;
-    //   color: $color-2;
-    // }
-
     a {
       margin-top: 75px;
       font-family: $font-family1;
       font-weight: 900;
       display: flex;
-      color: $color-2;
-      background: hsl(340deg 100% 32%);
+      background: $color-3;
       border-radius: 12px;
       border: none;
       padding: 0;
       cursor: pointer;
       outline-offset: 4px;
+      width: 265px;
     }
 
     .home-button {
       padding: 12px 42px;
       border-radius: 12px;
-      font-size: 1.25rem;
-      background: hsl(345deg 100% 47%);
+      font-size: 20px;
+      background: $color-1;
       color: white;
       transform: translateY(-6px);
     }
@@ -81,23 +73,16 @@
     a:active .home-button {
       transform: translateY(-2px);
     }
-
-    // .home-button {
-    //   display: flex;
-
-    //   &:hover {
-    //     color: $color-1;
-    //   }
-    // }
   }
 
-  @media screen and (max-width: 890px) {
+  @media screen and (max-width: 980px) {
     height: unset;
     flex-direction: column;
     margin: unset;
 
     img {
       margin-bottom: 60px;
+      max-width: 280px;
     }
 
     .home-main {
@@ -167,6 +152,15 @@
 
     p {
       padding: 10px;
+    }
+
+    a {
+      width: 211px !important;
+    }
+
+    .home-button {
+      font-size: 14px !important;
+      width: 211px !important;
     }
   }
 }

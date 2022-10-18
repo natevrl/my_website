@@ -38,7 +38,10 @@ export default class AboutMe extends Component {
 				<div className="about-contenair">
 					<div className="about-text">
 						<p>
-							- jai fais 1 an de C donc techniquement je suis trop
+							- WIIFM : Justifier chaque affirmation par ce qu'ils vont y gagner
+							- developpeur web/mobile
+							- passionne de cybersec
+							- jai fais 1 an de C donc techniquement je suis trop fort, je connais les fondamentaux du developpement informatique (memoire, : donc je code vos applications ultra opti, sans lag pointeur, structure de donnees, binaire/compilation)
 							- j'ai appris en autonomie total sans profs, je sais me debrouiller sur internet,
 							- j'ai toujours soif d'apprendre et aucun probleme ne me fait peur
 							- je sais travailler en equipe

@@ -4,7 +4,7 @@
 $font-family1: "Ubuntu", sans-serif;
 $font-family2: "Source Sans Pro", sans-serif;
 
-$color-1: #541212;
+$color-1: #771e1e;
 $color-2: #8b9a46;
 $color-3: #eeeeee;
 $color-4: #c5c31a;
@@ -42,15 +42,6 @@ body {
     padding: 40px 20px;
   }
 }
-
-// @media screen and (max-width: 850px) {
-//   .home,
-//   .contact,
-//   .about-contenair,
-//   .projects {
-//     height: unset;
-//   }
-// }
 
 @mixin verticalCenter {
   display: flex;

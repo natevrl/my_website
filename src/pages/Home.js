@@ -14,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     timeline.current = gsap
       .timeline()
-      .from(select(".home-button"), 1, { x: -100, opacity: 0 })
+      .from(select("a"), 1, { x: -100, opacity: 0 })
       .from(select(".under-title"), 1, { y: -100, opacity: 0 }, "-=1")
       .from(select("img"), 1, { x: 200, opacity: 0 }, "-=1")
       .from(select("p"), 1, { opacity: 0 }, "-=0.5");
