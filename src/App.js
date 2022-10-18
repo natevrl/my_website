@@ -18,8 +18,8 @@ const App = () => {
 					<Route path="/projects/c" element={<DeckHandler tag="C" />} />
 					<Route path="/projects/unix-bash" element={<DeckHandler tag="Unix/Bash" />} />
 					<Route
-						path="/projects/web-mobile"
-						element={<DeckHandler tag="Web/Mobile" />}
+						path="/projects/web"
+						element={<DeckHandler tag="Web" />}
 					/>
 				</Route>
 				<Route path="/about_me" element={<AboutMe />} />

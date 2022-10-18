@@ -81,32 +81,19 @@ export default function PhoneFilter() {
         onClose={handleClose}
       >
 		<MenuItem onClick={handleClose} disableRipple>
-			<NavLink exact to="/projects/" className="filter-btn" activeclassname="active"><span>All</span></NavLink>	
+			<NavLink to="/projects/all" className="filter-btn" activeclassname="active"><span>All</span></NavLink>	
         </MenuItem>
 
         <MenuItem  className="menu-items" onClick={handleClose} disableRipple>
-          <NavLink exact to="/projects/c" className="filter-btn" activeclassname="active"><span>C</span></NavLink>
+          <NavLink to="/projects/web" className="filter-btn" activeclassname="active"><span>Web</span></NavLink>
         </MenuItem>
 
         <MenuItem onClick={handleClose} disableRipple>
-			<NavLink exact to="/projects/cpp" className="filter-btn" activeclassname="active"><span>C++</span></NavLink>
+			<NavLink to="/projects/c" className="filter-btn" activeclassname="active"><span>C</span></NavLink>
         </MenuItem>
-
-
-
 		<MenuItem onClick={handleClose} disableRipple>
-			<NavLink exact to="/projects/reactjs" className="filter-btn" activeclassname="active"><span>React.js</span></NavLink>
+			<NavLink to="/projects/unix-bash" className="filter-btn" activeclassname="active"><span>unix-bash</span></NavLink>
 		</MenuItem>
-
-		<MenuItem onClick={handleClose} disableRipple>
-			<NavLink exact to="/projects/html_css" className="filter-btn" activeclassname="active"><span>html_css</span></NavLink>
-		</MenuItem>
-
-		<MenuItem onClick={handleClose} disableRipple>
-		<NavLink exact to="/projects/linux" className="filter-btn" activeclassname="active"><span>Linux</span></NavLink>
-		</MenuItem>
-
-
       </StyledMenu>
     </div>
   );

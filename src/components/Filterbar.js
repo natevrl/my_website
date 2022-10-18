@@ -9,8 +9,8 @@ const Filterbar = (props) => {
 				<NavLink to="/projects/all" activeclassname="active">
 					<span>All</span>
 				</NavLink>
-				<NavLink to="/projects/web-mobile" activeclassname="active">
-					<span>Web/Mobile</span>
+				<NavLink to="/projects/web" activeclassname="active">
+					<span>Web</span>
 				</NavLink>
 				<NavLink to="/projects/c" activeclassname="active">
 					<span>C</span>

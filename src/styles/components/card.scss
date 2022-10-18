@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: space-evenly;
   flex-shrink: 0;
-  width: 280px;
+  width: 380px;
   height: 280px;
   border-radius: 10%;
-  margin: 5px;
-  background: rgb(20, 20, 20);
-  box-shadow: 4px 4px 4px 1px #000;
+  margin: 8px;
+  background: rgb(24, 24, 24);
+  box-shadow: 5px 5px 0px 0px rgb(32, 32, 32);
   padding: 15px 25px;
 
   &:hover {
@@ -16,24 +16,72 @@
     transform: translateY(-7px);
   }
 
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    .card-tags {
+      display: flex;
+
+      .tags-item {
+        margin-right: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+  }
+
   a {
     display: flex;
     justify-content: center;
-    font-size: 36px;
     color: $color-3;
   }
 
-  .card-description {
-    font-size: 18px;
-    line-height: 24px;
+  .MuiSvgIcon-root {
+    font-size: 36px;
+    &:hover {
+      color: $color-1;
+    }
   }
 
-  .card-tags {
+  .card-description {
+    font-size: 16px;
+    // line-height: 24px;
+  }
+
+  .card-stack {
     display: flex;
 
-    .tags-item {
+    .stack-item {
       margin-right: 8px;
-      font-size: 16px;
+      font-size: 0.75rem;
+      color: $grey;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    width: 280px;
+    height: 280px;
+
+    .card-header .card-tags .tags-item {
+      display: flex;
+      align-items: center;
+      font-size: 0.6rem;
+      font-weight: 600;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      color: $color-3;
+    }
+
+    .MuiSvgIcon-root {
+      font-size: 24px;
+    }
+
+    .card-description {
+      font-size: 15px;
     }
   }
 
