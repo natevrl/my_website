@@ -7,7 +7,7 @@
 
 <b>Stack used :</b>
 - React.js
--   Sass
+-   Sass (SCSS)
 -   Material UI
 -   Gsap Animation
 -   React Navigation V6
