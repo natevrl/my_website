@@ -6,8 +6,9 @@
 ![natevrl-portefolio-home_page](https://user-images.githubusercontent.com/80359249/196536084-1d625b84-dc18-41a3-a510-ce65010c267a.png)
 
 <b>Stack used :</b>
+
 - React.js
--   Sass (SCSS)
--   Material UI
--   Gsap Animation
--   React Navigation V6
+- Sass (SCSS)
+- Material UI
+- Gsap Animation
+- React Router V6

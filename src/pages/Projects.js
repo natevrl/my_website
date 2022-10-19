@@ -16,8 +16,9 @@ export const Projects = () => {
 	  timeline.current = gsap
 		.timeline()
 		.from(select(".filter-bar"), 1, { x: -100, direction:"up", opacity: 0 })
-		.from(select("li"), 1, { x: 200, opacity: 0 }, "-=1")
-		.from(select(".card-title"), 1, { opacity: 0 }, "-=0.5");
+		.from(select(".card-tags"), 1, { x: 200, opacity: 0 }, "-=1")
+		.from(select("a"), 1, {opacity: 0 }, "-=0.8")
+		.from(select(".card-title"), 1, { opacity: 0 }, "-=0.8");
 	}, []);
   return (
     <>
