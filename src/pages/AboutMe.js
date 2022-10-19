@@ -11,7 +11,6 @@ export default class AboutMe extends Component {
 			{name: "html", url: "html.png"},
 			{name: "c", url: "c.png"},
 			{name: "react", url: "react.png"},
-			{name: "reactnative", url: "reactnative.png"},
 			{name: "git", url: "git.png"},
 			{name: "firebase", url: "firebase.png"},
 			{name: "redux", url: "redux.png"},
@@ -26,7 +25,7 @@ export default class AboutMe extends Component {
 					<li  key={index}>
 						<img className="skill-img" src={BASE_PATH + skill.url} alt={skill.name}/>
 					</li>
-						<div className="hover-skill-number"><p>100%</p></div>
+						<div className="hover-skill-number"><p>{skill.name}</p></div>
 				</div>;
 			});
 		return (
