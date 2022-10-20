@@ -17,6 +17,12 @@
     display: flex;
     justify-content: center;
     width: 100%;
+
+    a .MuiSvgIcon-root {
+      &:hover {
+        transform: translate(-2px, -2px);
+      }
+    }
   }
 
   @media screen and (max-width: 850px) {

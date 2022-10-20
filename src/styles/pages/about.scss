@@ -1,28 +1,22 @@
 .about-contenair {
-  width: 80%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   margin: auto;
 
   .about-text {
     max-width: 800px;
-    margin: 0 50px;
     text-align: justify;
   }
 
   .skills-contenair {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     .skills {
       max-width: 500px;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       flex-wrap: wrap;
       position: relative;
 
