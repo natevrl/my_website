@@ -29,13 +29,12 @@ const Home = () => {
         <div className="home-main">
           <Typist avgTypingDelay={110}>
             <span className="type-title">
-              {"Hello, "}
+              {"Hello, ici "}
               <span className="type-name">{"Nathan"}</span>
-              {" here."}
             </span>
           </Typist>
           <div className="under-title">
-            Completed 30+ projects in less than 1 year
+            40+ projets complétés en moins de 2 ans
           </div>
           <p>Développeur web passionné et spécialiste en React.js,
             voilà 4 ans que je code autant en autodidacte qu'à travers plusieurs formations
