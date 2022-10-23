@@ -1,12 +1,13 @@
 import React, { useRef, useEffect } from "react";
 import Typist from "react-typist";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import "react-typist/dist/Typist.css";
 import { gsap } from "gsap";
 
+
 const Home = () => {
-  
+
   const boxRef = useRef();
   const select = gsap.utils.selector(boxRef);
   const timeline = useRef();
@@ -24,7 +25,7 @@ const Home = () => {
     <>
       <Header title={"> /home"} />
       <div className="home" ref={boxRef}>
-        <img src="./media/photo-intra.jpg" alt="profil-picture" />
+        <img src="./media/photo-intra.png" alt="profil-picture" />
         <div className="home-main">
           <Typist avgTypingDelay={110}>
             <span className="type-title">
@@ -36,11 +37,11 @@ const Home = () => {
           <div className="under-title">
             Completed 30+ projects in less than 1 year
           </div>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. When an unknown printer took a galley of type and orem
-            Ipsum passages, and more recently with desktop publishing software.
-          </p>
+          <p>Développeur web passionné et spécialiste en React.js,
+            voilà 4 ans que je code autant en autodidacte qu'à travers plusieurs formations
+            et expériences professionnelles
+            Autonome et débrouillard, j'aime le challenge et
+            je suis disponible à temps-plein pour concrétiser vos projets les plus ambitieux. </p>
 
           <Link to="/projects/all" >
             <span className="home-button">

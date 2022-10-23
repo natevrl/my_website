@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Card from "./Card";
-import dataFromDb from "../db";
+import ProjectsDb from "../data/projectsDb";
 import { useOutletContext } from "react-router-dom";
 
 const find_tag = (tabs, tag) => {
@@ -18,9 +18,9 @@ const DeckHandler = (props) => {
 		setName(window.location.pathname);
 	}, [rows]);
 
-	while (dataFromDb[++i])
-		if (find_tag(dataFromDb[i].tags, props.tag))
-			rows.push(<Card key={dataFromDb[i].id} item={dataFromDb[i]} id={i}/>);
+	while (ProjectsDb[++i])
+		if (find_tag(ProjectsDb[i].tags, props.tag))
+			rows.push(<Card key={ProjectsDb[i].id} item={ProjectsDb[i]} id={i}/>);
 
 	return <div className="deck-contenair">{rows}</div>;
 };

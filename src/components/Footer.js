@@ -15,7 +15,7 @@ const Footer = () => {
       </a>
 
 		</div>
-        <p className="text-credits">Built and designed by nbenhado.</p>
+        <p className="text-credits">Built and designed by natevrl.</p>
         <p className="text-credits">All rights reserved. ©</p>
       </footer>
   );
