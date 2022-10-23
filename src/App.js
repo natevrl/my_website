@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import { Projects, C, Cpp, Reactjs, Linux, html_css } from "./pages/Projects";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
-import Not_found from "./pages/Not_found";
+import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import DeckHandler from "./components/DeckHandler";
 
@@ -24,7 +24,7 @@ const App = () => {
 				</Route>
 				<Route path="/about_me" element={<AboutMe />} />
 				<Route path="/contact" element={<Contact />} />
-				<Route path="*" element={<Not_found />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
 		</div>

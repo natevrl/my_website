@@ -1,16 +1,16 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Not_found = () => {
+const NotFound = () => {
 
 	const navigate = useNavigate();
 
 	return (
-		<div>
+		<div className='notfound-contenair'>
 			<h1>404 NOT FOUND</h1>
 			<button onClick={() => navigate("/")}>Retourner a l'accueil</button>
 		</div>
 	);
 };
 
-export default Not_found;
+export default NotFound;

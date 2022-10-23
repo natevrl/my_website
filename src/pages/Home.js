@@ -45,7 +45,7 @@ const Home = () => {
 
           <Link to="/projects/all" >
             <span className="home-button">
-              Check out my work
+              Mes projets
             </span>
           </Link>
         </div>

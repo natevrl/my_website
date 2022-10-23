@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import Header from '../components/Header';
+import { useNavigate } from 'react-router-dom';
 
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/a2caac00-4b33-11ed-8970-6943e4ac8982"; // TODO - fill on the later step
@@ -8,6 +9,8 @@ const FORM_ENDPOINT = "https://public.herotofu.com/v1/a2caac00-4b33-11ed-8970-69
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
+  const navigate = useNavigate();
+
   const boxRef = useRef();
   const select = gsap.utils.selector(boxRef);
   const timeline = useRef();
@@ -26,10 +29,11 @@ const Contact = () => {
 
   if (submitted) {
     return (
-      <>
-        <h2>Thank you!</h2>
-        <div>We'll be in touch soon.</div>
-      </>
+      <div className='thanks-contenair'>
+        <h1>Merci !</h1>
+        <h3>Nous serons en contact très bientôt.</h3>
+        <button onClick={() => navigate("/")}>Retourner a l'accueil</button>
+      </div>
     );
   }
 
@@ -48,7 +52,7 @@ const Contact = () => {
           <input type="text" placeholder="Name" name="name" required />
           <input type="email" placeholder="Email" name="email" required />
           <textarea placeholder="Message" name="message" required />
-          <button type="submit">Send a message</button>
+          <button type="submit">Envoyer un message</button>
         </form>
       </div>
     </>
