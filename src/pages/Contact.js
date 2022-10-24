@@ -18,7 +18,7 @@ const Contact = () => {
   useEffect(() => {
     timeline.current = gsap
       .timeline()
-      .from(select("form"), 1, { opacity: 0 }, "0.2")
+      .from(select("form"), 1, { y: 180, opacity: 0 })
   }, []);
 
   const handleSubmit = () => {

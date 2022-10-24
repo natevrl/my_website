@@ -3,20 +3,20 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
-	const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
 
-	useEffect(() => {
+  useEffect(() => {
 
-		const changeWindowSize = () => {
-			setWindowSize(window.innerWidth);
-		}
-		window.addEventListener('resize', changeWindowSize);
-		return (() => {window.removeEventListener('resize', changeWindowSize)});
-	}, []);
+    const changeWindowSize = () => {
+      setWindowSize(window.innerWidth);
+    }
+    window.addEventListener('resize', changeWindowSize);
+    return (() => { window.removeEventListener('resize', changeWindowSize) });
+  }, []);
 
   return (
     <>
-      {windowSize < 580 ? (
+      {windowSize < 650 ? (
         <nav className="mobile-navbar">
           <NavLink to="/" activeclassname="active">
             <i className="fas fa-home"></i>

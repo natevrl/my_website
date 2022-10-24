@@ -80,20 +80,20 @@ export default function PhoneFilter() {
         open={open}
         onClose={handleClose}
       >
-		<MenuItem onClick={handleClose} disableRipple>
-			<NavLink to="/projects/all" className="filter-btn" activeclassname="active"><span>All</span></NavLink>	
+        <MenuItem onClick={handleClose} disableRipple>
+          <NavLink to="/projects/all" className="filter-btn" activeclassname="active"><span>All</span></NavLink>
         </MenuItem>
 
-        <MenuItem  className="menu-items" onClick={handleClose} disableRipple>
+        <MenuItem className="menu-items" onClick={handleClose} disableRipple>
           <NavLink to="/projects/web" className="filter-btn" activeclassname="active"><span>Web</span></NavLink>
         </MenuItem>
 
         <MenuItem onClick={handleClose} disableRipple>
-			<NavLink to="/projects/c" className="filter-btn" activeclassname="active"><span>C</span></NavLink>
+          <NavLink to="/projects/c" className="filter-btn" activeclassname="active"><span>C</span></NavLink>
         </MenuItem>
-		<MenuItem onClick={handleClose} disableRipple>
-			<NavLink to="/projects/unix-bash" className="filter-btn" activeclassname="active"><span>unix-bash</span></NavLink>
-		</MenuItem>
+        <MenuItem onClick={handleClose} disableRipple>
+          <NavLink to="/projects/unix" className="filter-btn" activeclassname="active"><span>unix</span></NavLink>
+        </MenuItem>
       </StyledMenu>
     </div>
   );
