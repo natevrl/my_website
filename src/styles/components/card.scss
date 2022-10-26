@@ -84,6 +84,9 @@
     .card-description {
       font-size: 15px;
     }
+    .card-stack {
+      flex-flow: wrap;
+    }
   }
 
   @media screen and (max-width: 350px) {
@@ -99,10 +102,6 @@
 
     .card-title {
       font-size: 1.2rem;
-    }
-
-    .card-stack {
-      flex-flow: wrap;
     }
   }
 }
