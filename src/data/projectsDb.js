@@ -20,26 +20,26 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": "Stier Movies",
-	"description": "Recherchez et ajoutez vos films préférés en favoris. Coder en React.js, feature : fetching API, inifinite scroll, redux et local storage",
+	"description": "Recherchez et ajoutez vos films préférés en favoris. Coder en React.JS, feature : fetching API, inifinite scroll, redux et local storage",
 	"link": "https://github.com/natevrl/StierMovies",
 	"tags": ["All", "Web"],
-	"stack": ["react", "redux", "API", "router v6", "sass", "mui"]
+	"stack": ["reactJS", "redux", "API", "router v6", "sass", "mui"]
 
 },
 {
 	"id": uuidv4(),
 	"title": "nathanvrl.tech",
-	"description": "Première version de ce site codé en React.js, avec des features comme un système de filtrage, back-end, des animations, du responsive design...",
+	"description": "Première version de ce site codé en React.JS, avec des features comme un système de filtrage, back-end, des animations, du responsive design...",
 	"link": "https://github.com/natevrl/natevrl.github.io",
 	"tags": ["All", "Web"],
-	"stack": ["react", "router v6", "sass", "mui", "gsap", "back-end"]
+	"stack": ["reactJS", "router v6", "sass", "mui", "gsap", "back-end"]
 
 },
 {
 	"id": uuidv4(),
 	"title": "Minitalk",
 	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/minitalk",
 	"tags": ["All", "C", "Unix/Bash"],
 	"stack": ["linked lists", "unix signals", "execve"]
 
@@ -48,7 +48,7 @@ const ProjectsDb = [{
 	"id": uuidv4(),
 	"title": "so_long",
 	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/so_long",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
 
@@ -57,7 +57,7 @@ const ProjectsDb = [{
 	"id": uuidv4(),
 	"title": "push_swap",
 	"description": "Algorithme de tri utilisant deux stack avec un ensemble limité d'instructions",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/push_swap",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
 },
@@ -65,16 +65,16 @@ const ProjectsDb = [{
 	"id": uuidv4(),
 	"title": "get_next_line",
 	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/get_next_line",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
 
 },
 {
 	"id": uuidv4(),
-	"title": "printf",
+	"title": "ft_printf",
 	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/ft_printf",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
 
@@ -83,25 +83,25 @@ const ProjectsDb = [{
 	"id": uuidv4(),
 	"title": "philosophers",
 	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/philosophers",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
 
 },
 {
 	"id": uuidv4(),
-	"title": "Piscine_42",
-	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"title": "42_POOL",
+	"description": "Épreuve de selection pour entrer à l'école 42. 1 Mois hyper intense à coder en C, en P2P learning",
+	"link": "https://github.com/natevrl/42_POOL",
 	"tags": ["All", "C", "Unix/Bash"],
-	"stack": ["linked lists", "unix signals", "execve"]
+	"stack": [""]
 
 },
 {
 	"id": uuidv4(),
 	"title": "libft",
 	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/42-libft",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
 
@@ -110,52 +110,16 @@ const ProjectsDb = [{
 	"id": uuidv4(),
 	"title": "blacksmith_",
 	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/Blacksmith_",
 	"tags": ["All", "Web"],
-	"stack": ["linked lists", "unix signals", "execve"]
-
-},
-{
-	"id": uuidv4(),
-	"title": "Eagl",
-	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
-	"tags": ["All", "Web"],
-	"stack": ["linked lists", "unix signals", "execve"]
-
-},
-{
-	"id": uuidv4(),
-	"title": "roadmap.sh",
-	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
-	"tags": ["All", "Web"],
-	"stack": ["linked lists", "unix signals", "execve"]
-
-},
-{
-	"id": uuidv4(),
-	"title": "UberClone",
-	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
-	"tags": ["All", "Web"],
-	"stack": ["linked lists", "unix signals", "execve"]
-
-},
-{
-	"id": uuidv4(),
-	"title": "script_workplaces",
-	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
-	"tags": ["All", "Unix/Bash"],
-	"stack": ["linked lists", "unix signals", "execve"]
+	"stack": ["HTML/CSS", "Sass"]
 
 },
 {
 	"id": uuidv4(),
 	"title": "born2beroot",
 	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/born2beroot",
 	"tags": ["All", "Unix/Bash"],
 	"stack": ["linked lists", "unix signals", "execve"]
 
@@ -164,18 +128,10 @@ const ProjectsDb = [{
 	"id": uuidv4(),
 	"title": ".vimrc",
 	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
+	"link": "https://github.com/natevrl/.vimrc",
 	"tags": ["All", "Unix/Bash"],
 	"stack": ["linked lists", "unix signals", "execve"]
 
-},
-{
-	"id": uuidv4(),
-	"title": "w3ather",
-	"description": "coming soon...",
-	"link": "https://github.com/natevrl/minishell",
-	"tags": ["All", "Web"],
-	"stack": ["linked lists", "unix signals", "execve"]
 }];
 
 export default ProjectsDb;
