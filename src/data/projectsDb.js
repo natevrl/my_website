@@ -56,11 +56,10 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": "push_swap",
-	"description": "coming soon...",
+	"description": "Algorithme de tri utilisant deux stack avec un ensemble limité d'instructions",
 	"link": "https://github.com/natevrl/minishell",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
-
 },
 {
 	"id": uuidv4(),
