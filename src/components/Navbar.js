@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       {windowSize < 650 ? (
         <nav className="mobile-navbar">
-          <NavLink to="/" activeclassname="active">
+          <NavLink to="/home" activeclassname="active">
             <i className="fas fa-home"></i>
           </NavLink>
           <NavLink to="/projects/all" activeclassname="active">
@@ -33,7 +33,7 @@ const Navbar = () => {
         </nav>
       ) : (
         <nav className="navbar">
-          <NavLink to="/" activeclassname="active">
+          <NavLink to="/home" activeclassname="active">
             <span>/home </span>
           </NavLink>
           <NavLink to="/projects/all" activeclassname="active">

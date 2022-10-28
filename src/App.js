@@ -13,6 +13,7 @@ const App = () => {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/projects/" element={<Projects />}>
           <Route path="/projects/all" element={<DeckHandler tag="All" />} />
           <Route path="/projects/c" element={<DeckHandler tag="C" />} />

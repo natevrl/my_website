@@ -25,7 +25,7 @@ const Home = () => {
     <>
       <Header title={"> /home"} />
       <div className="home" ref={boxRef}>
-        <img src="./media/photo-intra.png" alt="profil-picture" />
+        <img src="./media/photo-intra.jpg" alt="profil-picture" />
         <div className="home-main">
           <Typist avgTypingDelay={110}>
             <span className="type-title">
