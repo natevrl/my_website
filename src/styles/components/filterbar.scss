@@ -16,15 +16,9 @@
 
 .filter-bar {
   display: flex;
-  width: 34%;
+  width: 30%;
   max-width: 500px;
-  align-items: baseline;
   justify-content: space-around;
-
-  p {
-    margin-right: 15px;
-    font-size: 16px;
-  }
 
   a {
     display: flex;
