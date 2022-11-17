@@ -38,7 +38,7 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": "Minitalk",
-	"description": "",
+	"description": "Tchat client/serveur en utilisant seulement 2 signaux UNIX (SIGUSR1 et SIGUSR2) pour envouyer un message",
 	"link": "https://github.com/natevrl/minitalk",
 	"tags": ["All", "C", "Unix/Bash"],
 	"stack": ["linked lists", "unix signals", "execve"]
@@ -47,7 +47,7 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": "so_long",
-	"description": "",
+	"description": "Jeu vidéo 2D en C",
 	"link": "https://github.com/natevrl/so_long",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
@@ -73,7 +73,7 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": "ft_printf",
-	"description": "",
+	"description": "Reproduction de la fonction printf()",
 	"link": "https://github.com/natevrl/ft_printf",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
@@ -82,7 +82,7 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": "philosophers",
-	"description": "",
+	"description": "Projet multi-threading",
 	"link": "https://github.com/natevrl/philosophers",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
@@ -100,7 +100,7 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": "libft",
-	"description": "",
+	"description": "Coder une librairie de plus de 50 fonctions en C",
 	"link": "https://github.com/natevrl/42-libft",
 	"tags": ["All", "C"],
 	"stack": ["linked lists", "unix signals", "execve"]
@@ -109,7 +109,7 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": "blacksmith_",
-	"description": "",
+	"description": "Site web modern statique",
 	"link": "https://github.com/natevrl/Blacksmith_",
 	"tags": ["All", "Web"],
 	"stack": ["HTML/CSS", "Sass"]
@@ -118,7 +118,7 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": "born2beroot",
-	"description": "",
+	"description": "Administrer et sécuriser un serveur Linux",
 	"link": "https://github.com/natevrl/born2beroot",
 	"tags": ["All", "Unix/Bash"],
 	"stack": ["linked lists", "unix signals", "execve"]
@@ -127,7 +127,7 @@ const ProjectsDb = [{
 {
 	"id": uuidv4(),
 	"title": ".vimrc",
-	"description": "",
+	"description": "setup VIM",
 	"link": "https://github.com/natevrl/.vimrc",
 	"tags": ["All", "Unix/Bash"],
 	"stack": ["linked lists", "unix signals", "execve"]
