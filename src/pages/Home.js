@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
-import Typist from "react-typist";
+// import Typist from "react-typist";
 import { Link } from "react-router-dom";
 import Header from "../components/Header";
-import "react-typist/dist/Typist.css";
+// import "react-typist/dist/Typist.css";
 import { gsap } from "gsap";
 
 
@@ -27,12 +27,12 @@ const Home = () => {
       <div className="home" ref={boxRef}>
         <img src="./media/photo-intra.jpg" alt="profil-picture" />
         <div className="home-main">
-          <Typist avgTypingDelay={110}>
-            <span className="type-title">
-              {"Hello, ici "}
-              <span className="type-name">{"Nathan"}</span>
-            </span>
-          </Typist>
+          {/* <Typist avgTypingDelay={110}> */}
+          <span className="type-title">
+            {"Hello, ici "}
+            <span className="type-name">{"Nathan"}</span>
+          </span>
+          {/* </Typist> */}
           <div className="under-title">
             40+ projets complétés en moins de 2 ans
           </div>
